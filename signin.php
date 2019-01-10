@@ -2,7 +2,7 @@
 	session_start();
 	$username = $_POST['username'];
 	$email = $_POST['email'];
-	$password = $_POST['password'];
+	$password = md5($_POST['password']);
 	$error = '';
 	
 	if(!empty($username) && !empty($email) && !empty($password)) {

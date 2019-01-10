@@ -30,9 +30,9 @@
 					<div class="form-group">
 						<form action="signin.php" method="post">
 						<label>Username</label>
-						<input type="username" class="form-control" id="username" name="username" required>
+						<input type="text" class="form-control" id="username" name="username" required>
 						<label>Email</label>
-						<input type="email" class="form-control" id="email" name="email" required>
+						<input type="text" class="form-control" id="email" name="email" required>
 						<label>Password</label>
 						<input type="password" class="form-control" id="password" name="password" required>
 						<input class="btn btn-primary btn-block button2" type="submit" value="Register now" name="register_btn">

@@ -87,11 +87,11 @@
 										<div class="modal-body">
 											<form action="add.php" method="post">
 												<label class="col-form-label">Name:</label>
-												<input type="text" class="form-control form-control-sm" id="name" name="name" placeholder="name" required>
+												<input type="text" class="form-control form-control-sm" id="name" name="name" placeholder="name" value="<?php echo $name; ?>" required>
 												<label class="col-form-label">Email address:</label>
-												<input type="email" class="form-control form-control-sm" id="email" name="email" placeholder="email@example.com" required>
+												<input type="email" class="form-control form-control-sm" id="email" name="email" placeholder="email@example.com" value="<?php echo $email; ?>" required>
 												<label class="col-form-label">Phone Number:</label>
-												<input type="tel" class="form-control form-control-sm" id="tel" name="tel" placeholder="phone number" required>
+												<input type="tel" class="form-control form-control-sm" id="tel" name="tel" placeholder="phone number" value="<?php echo $tel; ?>" required>
 												<input class="btn btn-primary btn-block button2" type="submit" name="submit" value="SAVE" onclick="return confirm('Are you sure?');">
 											</form>
 										</div>
@@ -131,7 +131,7 @@
 								
 								</button>
 								  <div class="dropdown-menu">
-									<a class="dropdown-item" href="#">Edit</a>
+									<a  data-toggle="modal" data-target="#exampleModalCenter" class="dropdown-item" href="edit.php?edit=<?php echo $row['id'];?>">Edit</a>
 									<a class="dropdown-item" href="delete.php?id=<?php echo $row["id"]; ?>" onclick="return confirm('Are you sure?');">Delete</a>
 								  </div>
 								</div>
